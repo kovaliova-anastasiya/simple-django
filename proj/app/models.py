@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class Message(models.Model):
+    text = models.TextField(verbose_name='Text')
+    created_at = models.DateTimeField(verbose_name='Message receipt time', auto_now=True)
+
